@@ -1,0 +1,46 @@
+/* Estilos personalizados para el carousel */
+::ng-deep .p-carousel .p-carousel-content .p-carousel-container .p-carousel-items-container .p-carousel-items-content {
+  display: flex;
+  align-items: center;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+::ng-deep .p-carousel .p-carousel-indicator button {
+  background-color: #e5e7eb;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+::ng-deep .p-carousel .p-carousel-indicator.p-highlight button {
+  background-color: #3b82f6;
+}
+
+/* Animaciones suaves para las cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo para el video placeholder */
+.video-placeholder {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 0 1rem;
+  }
+}

@@ -22,6 +22,11 @@
         </a>
       </li>
       <li>
+        <a href="#app-features" pRipple class="flex px-0 lg:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 no-underline">
+          <span>App</span>
+        </a>
+      </li>
+      <li>
         <a href="#testimonios" pRipple class="flex px-0 lg:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 no-underline">
           <span>Testimonios</span>
         </a>
@@ -211,6 +216,124 @@
         </div>
         <div class="text-900 font-bold text-4xl mb-3 line-height-3">50+</div>
         <p class="text-700 m-0">Profesionales en psicología disponibles para brindar orientación personalizada.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="app-features" class="surface-section px-4 py-8 md:px-6 lg:px-8">
+  <div class="grid align-items-center">
+    <div class="col-12 md:col-6 pr-0 md:pr-6">
+      <div class="text-blue-600 text-2xl mb-4 font-medium">CONOCE NUESTRA APP</div>
+      <div class="text-900 font-bold text-4xl md:text-5xl mb-6 line-height-3">Funcionalidades que transforman tu futuro</div>
+      <p class="text-700 text-xl line-height-3 mb-6">
+        Descubre todas las herramientas que AptitudePro pone a tu disposición para guiarte en la elección de tu carrera profesional ideal.
+      </p>
+
+      <div class="grid mb-6">
+        <div class="col-12 mb-4">
+          <div class="flex align-items-start">
+            <div class="bg-blue-100 inline-flex align-items-center justify-content-center border-circle mr-4" style="width: 3rem; height: 3rem">
+              <i class="pi pi-mobile text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <div class="text-900 font-bold text-lg mb-2">Interfaz Intuitiva</div>
+              <p class="text-700 line-height-3 m-0">Diseño moderno y fácil de usar que hace que tu experiencia sea fluida y agradable.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="flex align-items-start">
+            <div class="bg-blue-100 inline-flex align-items-center justify-content-center border-circle mr-4" style="width: 3rem; height: 3rem">
+              <i class="pi pi-chart-pie text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <div class="text-900 font-bold text-lg mb-2">Análisis Profundo</div>
+              <p class="text-700 line-height-3 m-0">Evaluaciones psicométricas basadas en metodologías científicas reconocidas internacionalmente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="flex align-items-start">
+            <div class="bg-blue-100 inline-flex align-items-center justify-content-center border-circle mr-4" style="width: 3rem; height: 3rem">
+              <i class="pi pi-comments text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <div class="text-900 font-bold text-lg mb-2">Orientación Personalizada</div>
+              <p class="text-700 line-height-3 m-0">Conecta con psicólogos especializados que te brindarán asesoramiento profesional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button pButton pRipple label="Explorar Funcionalidades" class="p-button-rounded p-button-lg font-bold px-5 py-3"></button>
+    </div>
+
+    <div class="col-12 md:col-6 mt-6 md:mt-0">
+      <p-carousel [value]="appScreenshots" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+        <ng-template pTemplate="item" let-screenshot>
+          <div class="text-center p-4">
+            <div class="relative mx-auto" style="max-width: 300px;">
+              <img [src]="screenshot.image" [alt]="screenshot.title" class="w-full border-round-2xl shadow-3">
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</div>
+
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+  <div class="text-center mb-8">
+    <div class="text-blue-600 text-2xl mb-4 font-medium">MIRA EN ACCIÓN</div>
+    <div class="text-900 font-bold text-4xl md:text-5xl mb-4">Conoce AptitudePro en video</div>
+    <p class="text-700 text-xl line-height-3 max-w-3xl mx-auto">
+      Descubre cómo nuestra aplicación te guía paso a paso en el proceso de descubrimiento de tu vocación profesional.
+    </p>
+  </div>
+
+  <div class="flex justify-content-center">
+    <div class="relative max-w-5xl w-full">
+      <div class="relative overflow-hidden border-round-2xl shadow-6" style="padding-bottom: 56.25%; height: 0;">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-gray-900 flex align-items-center justify-content-center">
+          <div class="text-center text-white">
+            <div class="bg-blue-500 inline-flex align-items-center justify-content-center border-circle mb-4" style="width: 5rem; height: 5rem">
+              <i class="pi pi-play text-3xl"></i>
+            </div>
+            <div class="text-2xl font-bold mb-2">Video Próximamente</div>
+            <!-- Cuando tengas el video, puedes usar esto: -->
+            <!-- <iframe class="absolute top-0 left-0 w-full h-full" src="TU_VIDEO_URL" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="grid mt-6">
+        <div class="col-12 md:col-4 text-center p-4">
+          <div class="bg-blue-50 inline-flex align-items-center justify-content-center border-circle mb-3" style="width: 3rem; height: 3rem">
+            <i class="pi pi-clock text-blue-600 text-xl"></i>
+          </div>
+          <div class="text-900 font-bold text-lg mb-2">5 Minutos</div>
+          <p class="text-700 m-0">Duración del tutorial completo</p>
+        </div>
+
+        <div class="col-12 md:col-4 text-center p-4">
+          <div class="bg-blue-50 inline-flex align-items-center justify-content-center border-circle mb-3" style="width: 3rem; height: 3rem">
+            <i class="pi pi-eye text-blue-600 text-xl"></i>
+          </div>
+          <div class="text-900 font-bold text-lg mb-2">Demo Completo</div>
+          <p class="text-700 m-0">Ve todas las funcionalidades</p>
+        </div>
+
+        <div class="col-12 md:col-4 text-center p-4">
+          <div class="bg-blue-50 inline-flex align-items-center justify-content-center border-circle mb-3" style="width: 3rem; height: 3rem">
+            <i class="pi pi-graduation-cap text-blue-600 text-xl"></i>
+          </div>
+          <div class="text-900 font-bold text-lg mb-2">Casos Reales</div>
+          <p class="text-700 m-0">Ejemplos de estudiantes reales</p>
+        </div>
       </div>
     </div>
   </div>
@@ -423,6 +546,60 @@
   </div>
 </div>
 
+
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+  <div class="text-center mb-8">
+    <div class="text-blue-600 text-2xl mb-4 font-medium">DESCARGA GRATIS</div>
+    <div class="text-900 font-bold text-4xl md:text-5xl mb-4">Lleva AptitudePro contigo</div>
+    <p class="text-700 text-xl line-height-3 max-w-3xl mx-auto">
+      Disponible para Android e iOS. Descarga nuestra aplicación móvil y descubre tu vocación desde cualquier lugar.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="col-12 md:col-4 p-4">
+      <div class="text-center p-6 border-round-xl shadow-2 surface-card hover:shadow-5 transition-duration-200">
+        <div class="bg-green-100 inline-flex align-items-center justify-content-center border-circle mb-4" style="width: 4rem; height: 4rem">
+          <i class="pi pi-android text-green-600 text-3xl"></i>
+        </div>
+        <div class="text-900 font-bold text-xl mb-3">Android</div>
+        <p class="text-700 line-height-3 mb-4">Compatible con Android 6.0 y versiones superiores</p>
+        <button pButton pRipple label="Descargar APK" icon="pi pi-download" class="p-button-rounded p-button-success w-full font-bold"></button>
+      </div>
+    </div>
+
+    <div class="col-12 md:col-4 p-4">
+      <div class="text-center p-6 border-round-xl shadow-2 surface-card hover:shadow-5 transition-duration-200">
+        <div class="bg-gray-100 inline-flex align-items-center justify-content-center border-circle mb-4" style="width: 4rem; height: 4rem">
+          <i class="pi pi-apple text-gray-700 text-3xl"></i>
+        </div>
+        <div class="text-900 font-bold text-xl mb-3">iOS</div>
+        <p class="text-700 line-height-3 mb-4">Compatible con iOS 12.0 y versiones superiores</p>
+        <button pButton pRipple label="App Store" icon="pi pi-apple" class="p-button-rounded p-button-secondary w-full font-bold"></button>
+      </div>
+    </div>
+
+    <div class="col-12 md:col-4 p-4">
+      <div class="text-center p-6 border-round-xl shadow-2 surface-card hover:shadow-5 transition-duration-200">
+        <div class="bg-blue-100 inline-flex align-items-center justify-content-center border-circle mb-4" style="width: 4rem; height: 4rem">
+          <i class="pi pi-globe text-blue-600 text-3xl"></i>
+        </div>
+        <div class="text-900 font-bold text-xl mb-3">Web App</div>
+        <p class="text-700 line-height-3 mb-4">Accede desde cualquier navegador web y disfrútalo</p>
+        <button pButton pRipple label="Abrir App Web" icon="pi pi-external-link" class="p-button-rounded w-full font-bold"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-8">
+    <div class="flex justify-content-center align-items-center gap-4 flex-wrap">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" height="60" class="cursor-pointer hover:opacity-80 transition-duration-200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/512px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" height="60" class="cursor-pointer hover:opacity-80 transition-duration-200">
+    </div>
+  </div>
+</div>
+
+
 <div id="contacto" class="grid grid-nogutter">
   <div class="col-12 md:col-6 bg-no-repeat bg-cover p-8" style="background-image: url('https://i.postimg.cc/GtDnKhtf/image.png')">
     <div class="max-w-lg">
@@ -536,10 +713,13 @@
           <a class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Inicio</a>
         </li>
         <li class="mb-3">
-          <a class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Funcionalidades</a>
+          <a href="#app-features" class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">App Móvil</a>
         </li>
         <li class="mb-3">
-          <a class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Especialistas</a>
+          <a href="#funcionalidades" class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Funcionalidades</a>
+        </li>
+        <li class="mb-3">
+          <a href="#testimonios" class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Testimonios</a>
         </li>
         <li class="mb-3">
           <a class="text-gray-300 hover:text-white cursor-pointer transition-colors transition-duration-150 no-underline">Planes</a>
